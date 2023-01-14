@@ -1,4 +1,4 @@
-FROM quay.io/keycloak/keycloak:20.0.3
+FROM jboss/keycloak
 
 ARG KEYCLOAK_ADMIN
 ENV KEYCLOAK_ADMIN $KEYCLOAK_ADMIN
