@@ -36,4 +36,8 @@ ARG PGPASSWORD
 ARG DB_PASSWORD=$PGPASSWORD
 ENV DB_PASSWORD $DB_PASSWORD
 
+# try to fix 
+USER jboss
+RUN sed -i -e 's/<web-context>auth<\/web-context>/<web-context>keycloak\/auth<\/web-context>/' $JBOSS_HOME/standalone/configuration/standalone.xml
+
 EXPOSE 8080 9990
