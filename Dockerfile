@@ -42,4 +42,4 @@ RUN echo $(ifconfig)
 
 EXPOSE 8080
 
-CMD [ "start" ]
+# CMD [ "start" ]
