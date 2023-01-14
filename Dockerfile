@@ -31,4 +31,4 @@ ENV DB_PASSWORD $DB_PASSWORD
 
 EXPOSE 8080
 
-CMD [ "start", "--hostname-strict=false" ]
+CMD [ "start-dev", "--hostname-strict=false" ]
