@@ -31,4 +31,4 @@ ENV DB_PASSWORD $DB_PASSWORD
 
 EXPOSE 8080
 
-CMD [ "./kc.sh", "start-dev" ]
+CMD [ "start-dev" ]
