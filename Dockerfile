@@ -35,6 +35,11 @@ ARG PGPASSWORD
 ARG DB_PASSWORD=$PGPASSWORD
 ENV DB_PASSWORD $DB_PASSWORD
 
+RUN echo $(hostname -i)
+RUN echo $(hostname -f)
+RUN echo $(hostname)
+RUN echo $(ifconfig)
+
 EXPOSE 8080
 
 CMD [ "start" ]
